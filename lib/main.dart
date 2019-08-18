@@ -26,21 +26,19 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              buildKeyboard(1, Colors.red),
-              buildKeyboard(2, Colors.orange),
-              buildKeyboard(3, Colors.yellow),
-              buildKeyboard(4, Colors.green),
-              buildKeyboard(5, Colors.teal),
-              buildKeyboard(6, Colors.blue),
-              buildKeyboard(7, Colors.purple),
-            ],
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            buildKeyboard(1, Colors.red),
+            buildKeyboard(2, Colors.orange),
+            buildKeyboard(3, Colors.yellow),
+            buildKeyboard(4, Colors.green),
+            buildKeyboard(5, Colors.teal),
+            buildKeyboard(6, Colors.blue),
+            buildKeyboard(7, Colors.purple),
+          ],
         ),
       ),
     );
